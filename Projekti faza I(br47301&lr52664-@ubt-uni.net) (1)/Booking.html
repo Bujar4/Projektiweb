@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Booking.css">
+    <title>Video-2</title>
+</head>
+
+
+<body class="main_bg">
+    <div class = "navbar">
+        <img src ="images/Buslogo3.png" class="logo" style="width:200px;height:200px";>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="placesToVisit.html">Places to visit</a></li>
+                     <li><a href="Booking.html">Book Now</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    
+                </ul>
+            </nav> 
+        </div> 
+    <div class="form">
+        <div class="form-text">
+            <h1><span><img src="images/art-1.png" alt=""></span>Book Now <span><img src="images/art-1.png" alt=""></span></h1>
+            <p>Book today for the experience of a life-time.</p>
+        </div>
+        <div class="main-form">
+            <form action="" method="">
+                <div>
+                    <span>full name</span>
+                    <input type="text" name="name" id="name" placeholder="Write your name here..." required>
+                </div>
+                <div>
+                    <span>Email address</span>
+                    <input type="email" name="name" id="name" placeholder="Write your email here..." required> 
+                </div>
+                <div>
+                    <!--- select option--->
+                    <span>Number of people</span>
+                    <select name="people" id="people" required>
+                        <option value=""> Add people</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3 </option>
+                        <option value="4">4</option>
+                    </select>
+                    <!-- -this is the select option--->
+                </div>
+                <div>
+                    <span>Departing Time</span>
+                    <input type="text" name="time" id="time" placeholder="Time" required>
+                </div>
+                <div>
+                    <span> Set the date </span>
+                    <input type="date" name="date" id="date" placeholder="date" required>
+                </div>
+                <div>
+                    <span>Phone number</span>
+                    <input type="number" name="number" id="number" placeholder="Write your number here..." required>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="SUBMIT" id="submit">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
