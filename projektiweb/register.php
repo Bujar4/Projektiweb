@@ -1,3 +1,4 @@
+<?php include('server.php') ?>
 <html>
 
 <head>
@@ -17,34 +18,34 @@
                 <img src ="images/Buslogo3.png" class="logo" style="width:200px;height:200px";>
                 <nav>
                     <ul>
-                      <li><a href="Home.html">Home</a></li>
+                      <li><a href="Home.php">Home</a></li>
                       <li><a href="placesToVisit.html">Places to visit</a></li>
                        <li><a href="Booking.html">Book Now</a></li>
-                      <li><a href="login.html">Login</a></li>
-                      <li><a href="register.html">Register</a></li>
+                      <li><a href="login.php">Login</a></li>
+                      <li><a href="register.php">Register</a></li>
                     </ul>
                 </nav> 
             </div> 
-
-     <form action="Home.html" onsubmit="return validateForm()">
-
-    <h4 class="form_title">Registration Page</h4>
+	
+  <form method="post" action="register.php">
+  
+  <h4 class="form_title">Registration Page</h4>
     <label>
-      <input type="text" class="input" name="email" id="emailId" placeholder="EMAIL" />
+      <input type="text" class="input" name="email" id="emailId" placeholder="EMAIL" value="<?php echo $email; ?>" />
       <div class="line-box">
 
         <div class="line"></div>
       </div>
     </label>
     <label>
-      <input type="text" class="input" name="username" id="userId" placeholder="USERNAME" />
+      <input type="text" class="input" name="username" id="userId" placeholder="USERNAME" value="<?php echo $username; ?>"/>
 
       <div class="line-box">
         <div class="line"></div>
       </div>
     </label>
     <label>
-      <input type="password" class="input" name="password" id="pass1" placeholder="PASSWORD" />
+      <input type="password" class="input" name="password_1" id="pass1" placeholder="PASSWORD" />
 
       <div class="line-box">
 
@@ -54,21 +55,20 @@
     </label>
     <label>
 
-      <input type="password" class="input" name="confirm" id="pass2" placeholder="CONFIRM PASSWORD" />
+      <input type="password" class="input" name="password_2" id="pass2" placeholder="CONFIRM PASSWORD" />
 
       <div class="line-box">
 
         <div class="line"></div>
       </div>
     </label>
-    <button type="submit" id="submitBtn" >submit</button>
-
+  	  <button type="submit" class="btn" name="reg_user">Register</button>
+		<p>
+  		 <a href="login.php">Kliko ketu nese ke nje llogari</a>
+  	</p>
+  	</div>
+  	
   </form>
-
-  <footer>
-
-  </footer>
 </body>
 <script src="js/register.js"></script>
-
 </html>

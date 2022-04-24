@@ -1,3 +1,4 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html>
 
@@ -17,7 +18,7 @@
             <img src ="images/Buslogo3.png" class="logo" style="width:200px;height:200px";>
             <nav>
                 <ul>
-                  <li><a href="Home.html">Home</a></li>
+                  <li><a href="Home.php">Home</a></li>
                   <li><a href="placesToVisit.html">Places to visit</a></li>
                    <li><a href="Booking.html">Book Now</a></li>
                   <li><a href="login.html">Login</a></li>
@@ -31,36 +32,34 @@
                 </ul>
             </nav> 
         </div> 
+	 
+  <form method="post" action="login.php">
+  
+  <h4 class="form_title">Login Page</h4>
 
-  <form action="Home.html" onsubmit="return validateForm()">
+<label>
+  <input type="text" class="input" name="username" id="userid" placeholder="USERNAME" />
 
-    <h4 class="form_title">Login Page</h4>
-
-    <label>
-      <input type="text" class="input" name="username" id="userid" placeholder="USERNAME" />
-
-      <div class="line-box">
-        <div class="line"></div>
-      </div>
-    </label>
-    <label>
-      <input type="password" class="input" name="password" id="pass" placeholder="password" />
+  <div class="line-box">
+	<div class="line"></div>
+  </div>
+</label>
+<label>
+  <input type="password" class="input" name="password" id="pass" placeholder="password" />
 
 
 
-      <div class="line-box">
+  <div class="line-box">
 
-        <div class="line"></div>
-      </div>
-    </label>
-    <button type="submit" id="submit">submit</button>
-
+	<div class="line"></div>
+  </div>
+</label>
+  		<button type="submit" class="btn" name="login_user">Login</button>
+  	</div>
+  	<p>
+  		 <a href="register.php">kliko ketu per te hapur nje llogari</a>
+  	</p>
   </form>
-
-  <footer>
-    
-  </footer>
 </body>
 <script src="js/login.js"></script>
-
 </html>
